@@ -119,7 +119,7 @@ const NavBar = () => {
                             <motion.li
                                 key={id}
                                 onClick={() => scrollToSection(id)}
-                                className='cursor-pointer text-lg hover:text-purple-400'
+                                className='cursor-pointer text-lg bg-transparent hover:text-purple-400'
                                 variants={itemVariants}
                             >
                                 {link}
