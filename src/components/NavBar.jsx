@@ -62,7 +62,7 @@ const NavBar = () => {
     };
 
     return (
-        <div className='flex justify-around  text-white font-sans items-center bg-transparent h-16 p-5 mt-3'>
+        <div className='flex justify-around relative text-white font-sans items-center bg-transparent h-16 p-5 mt-3'>
 
             {/* Desktop Nav */}
             <motion.div
@@ -96,7 +96,7 @@ const NavBar = () => {
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.5, duration: 0.5 }}
-                className='lg:hidden absolute right-8 top-8 z-10'>
+                className='lg:hidden absolute right-8 top-6 z-10'>
                 <button onClick={() => setIsOpen(!isOpen)}>
                     {isOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>

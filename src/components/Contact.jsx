@@ -203,27 +203,27 @@ const Contact = () => {
         onAnimationComplete={() => setFormVisible(true)}
         className="w-full lg:w-[40%] rounded-3xl backdrop-blur-md border border-white/10 bg-gradient-to-tr from-violet-600/5 via-zinc-700/5 to-violet-600/5 shadow-purple-500/10 p-5 hover:scale-[1.02] transform transition-all duration-300">
 
-        <motion.h2 variants={itemVariants} className="text-3xl sm:text-4xl font-bold mb-6">
+        <motion.h2 variants={itemVariants} className="text-3xl bg-transparent sm:text-4xl font-bold mb-6">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-purple-400">Get in Touch</span>
         </motion.h2>
 
         <motion.hr variants={itemVariants} />
 
-        <motion.p variants={itemVariants} className="text-base sm:text-lg mb-8 mt-3">
+        <motion.p variants={itemVariants} className="bg-transparent text-base sm:text-lg mb-8 mt-3">
           Have a project in mind, want to collaborate, or just want to say hi?
           Feel free to drop a message below!
         </motion.p>
 
         <motion.div variants={cardVariants} className="space-y-2 text-sm text-gray-500 dark:text-gray-400 flex flex-col gap-5">
-          <motion.a variants={itemVariants} href='mailto:dharodiyaneev07@gmail.com' target="_blank" className='flex w-fit items-center gap-2 text-white text-lg hover:text-purple-500 transition'>
-            <img src={GmailLogo} alt="" className='h-8' /> Hard Dharodiya
+          <motion.a variants={itemVariants} href='mailto:dharodiyaneev07@gmail.com' target="_blank" className='bg-transparent flex w-fit items-center gap-2 text-white text-lg hover:text-purple-500 transition'>
+            <img src={GmailLogo} alt="" className='h-8 bg-transparent' /> Hard Dharodiya
           </motion.a>
 
-          <motion.a variants={itemVariants} href='https://www.linkedin.com/in/hard-dharodiya-b2571125a' target="_blank" className='flex w-fit items-center gap-2 text-white text-lg hover:text-purple-500 transition'>
+          <motion.a variants={itemVariants} href='https://www.linkedin.com/in/hard-dharodiya-b2571125a' target="_blank" className='bg-transparent flex w-fit items-center gap-2 text-white text-lg hover:text-purple-500 transition'>
             <img src={LinkedInLogo} alt="" className='bg-white rounded-md h-8' /> Hard Dharodiya
           </motion.a>
 
-          <motion.a variants={itemVariants} href='https://github.com/HardDharodiya' target="_blank" className='flex w-fit items-center gap-2 text-white text-lg hover:text-purple-500 transition'>
+          <motion.a variants={itemVariants} href='https://github.com/HardDharodiya' target="_blank" className='bg-transparent flex w-fit items-center gap-2 text-white text-lg hover:text-purple-500 transition'>
             <img src={GithubLogo} alt="" className='bg-white rounded-full h-8' /> Hard Dharodiya
           </motion.a>
         </motion.div>
@@ -289,21 +289,6 @@ const Contact = () => {
 
       {/* Success Card */}
       {showSuccessCard && (
-        // <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-md bg-black/50">
-        //   <div className="flex flex-col justify-between items-center w-[90%] max-w-md h-[50%] rounded-3xl border border-white/10 bg-gradient-to-tr from-purple-400/10 via-slate-900/15 to-purple-500/10 shadow-lg p-6 text-center">
-        //     <h3 className="text-white font-bold text-xl mb-2">🥳 Message Sent</h3>
-        //     <div>
-        //       <p className="text-md text-white mb-4">Thanks for reaching out! 🙋‍♂️</p>
-        //       <p className="text-xl text-white mb-4">I’ll get back to you soon.</p>
-        //     </div>
-        //     <button
-        //       onClick={() => setShowSuccessCard(false)}
-        //       className="bg-purple-600 hover:bg-orange-500 text-lg font-semibold text-black px-6 py-2 rounded-md transition"
-        //     >
-        //       Thank you
-        //     </button>
-        //   </div>
-        // </div>
 
         <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-md bg-black/50 px-4 min-h-screen">
           <div className="flex flex-col justify-center items-center w-full sm:w-[90%] md:w-[70%] max-w-md rounded-3xl border border-white/10 bg-gradient-to-tr from-purple-400/10 via-slate-900/15 to-purple-500/10 shadow-lg p-6 text-center h-auto sm:h-auto">
