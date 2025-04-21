@@ -80,7 +80,7 @@ const NavBar = () => {
                     {link.map(({ id, link }) => (
                         <motion.li
                             key={id}
-                            className='cursor-pointer ml-3 mr-3 hover:text-slate-500'
+                            className='cursor-pointer bg-transparent ml-3 mr-3 hover:text-slate-500'
                             variants={itemVariants}
                             onClick={() =>
                                 scrollToSection(id)
@@ -119,7 +119,7 @@ const NavBar = () => {
                             <motion.li
                                 key={id}
                                 onClick={() => scrollToSection(id)}
-                                className='cursor-pointer text-lg hover:text-purple-400'
+                                className='cursor-pointer bg-transparent text-lg hover:text-purple-400'
                                 variants={itemVariants}
                             >
                                 {link}
