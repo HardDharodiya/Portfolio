@@ -97,7 +97,7 @@ const NavBar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.5, duration: 0.5 }}
                 className='lg:hidden fixed right-8 top-4 z-10 bg-transparent'>
-                <button onClick={() => setIsOpen(!isOpen)}>
+                <button className='bg-transparent' onClick={() => setIsOpen(!isOpen)}>
                     {isOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
             </motion.div>
