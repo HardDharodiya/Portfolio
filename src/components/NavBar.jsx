@@ -69,7 +69,7 @@ const NavBar = () => {
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8 }}
-                className="p-4 text-xl font-mono text-center"
+                className="p-4 text-xl font-mono text-center bg-transparent"
             >
                 <motion.ul
                     className="hidden lg:flex gap-20 text-2xl"
