@@ -12,7 +12,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='w-[100%]'>
+    <div className='w-screen'>
       <NavBar/>
       <Hero />
       <About />
