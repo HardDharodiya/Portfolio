@@ -3,16 +3,6 @@
 @tailwind utilities;
 
 
-.animate-rotate-3d{
-    animation: rotate3d 10s linear infinite;
-}
-
-@keyframes rotate3d {
-    0%{
-        transform: rotatex('0deg') rotateY('0deg') rotateZ(0deg);
-    }
-    100%{
-        transform: rotatex(100deg) rotateY(100deg) rotateZ(100deg);
-    }
-    
+body{
+   overflow-x: auto;
 }
