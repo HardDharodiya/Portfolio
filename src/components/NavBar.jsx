@@ -112,7 +112,7 @@ const NavBar = () => {
                         exit={{ opacity: 0, y: -20 }}
                         className='flex flex-col justify-center 
                         backdrop-blur-md  border-white/10 bg-gradient-to-tr from-purple-400/10 via-slate-900/15 to-purple-500/10 shadow-purple-500/10 
-                        items-start gap-4 lg:hidden border rounded-2xl p-4  absolute top-16 right-10 z-20' // Positioning below the hamburger
+                        items-start gap-4 lg:hidden border rounded-2xl p-4 fixed top-16 right-10 z-20' // Positioning below the hamburger
                         style={{ maxHeight: '80vh', overflowY: 'auto' }}
                     >
                         {link.map(({ id, link }) => (
