@@ -8,6 +8,10 @@ const NavBar = () => {
 
     const link = [
         {
+            id: "home",
+            link: "Home"
+        },
+        {
             id: "about",
             link: "About"
         },
@@ -62,17 +66,18 @@ const NavBar = () => {
     };
 
     return (
-        <div className='flex justify-around relative text-white font-sans items-center bg-transparent h-16 p-5 mt-3'>
+        <div className='flex justify-around relative text-white font-sans items-center bg-transparent h-16 p-5 mt-3 z-20'>
 
             {/* Desktop Nav */}
             <motion.div
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8 }}
-                className="p-4 text-xl font-mono text-center bg-transparent"
+                className="p-4 px-8 text-xl font-mono fixed text-center bg-none bg-transparent 
+                lg:backdrop-blur-md lg:border lg:border-white/10 lg:bg-gradient-to-tr lg:from-purple-400/10 lg:via-slate-900/15 lg:to-purple-500/10 lg:shadow-purple-500/10 lg:rounded-full"
             >
                 <motion.ul
-                    className="hidden lg:flex gap-20 text-2xl"
+                    className="hidden bg-transparent lg:flex gap-20 text-2xl"
                     variants={containerVariants}
                     initial="hidden"
                     animate="visible"
@@ -85,7 +90,11 @@ const NavBar = () => {
                             onClick={() =>
                                 scrollToSection(id)
                             }>
-                            {link}
+                            <span
+                                className="relative bg-transparent after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-0  after:transition-all after:duration-300 after:translate-x-[-50%] hover:after:w-full after:h-[2px] after:bg-purple-400 "
+                            >
+                                {link}
+                            </span>
                         </motion.li>
                     ))}
                 </motion.ul>
@@ -98,7 +107,9 @@ const NavBar = () => {
                 transition={{ delay: 1.5, duration: 0.5 }}
                 className='lg:hidden fixed right-8 top-6 z-10 bg-transparent'>
                 <button className='bg-transparent' onClick={() => setIsOpen(!isOpen)}>
-                    {isOpen ? <X size={28} /> : <Menu size={28} className='bg-transparent'/>}
+                    {isOpen ?
+                        <X size={34} className='bg-transparent  backdrop-blur-md border border-white/10 bg-gradient-to-tr from-purple-400/10 via-slate-900/15 to-purple-500/10 shadow-purple-500/10 p-2 justify-center items-center rounded-full' />
+                        : <Menu size={34} className='bg-transparent  backdrop-blur-md border border-white/10 bg-gradient-to-tr from-purple-400/10 via-slate-900/15 to-purple-500/10 shadow-purple-500/10 p-2 justify-center items-center rounded-full' />}
                 </button>
             </motion.div>
 

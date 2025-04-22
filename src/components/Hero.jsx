@@ -23,7 +23,7 @@ const Hero = () => {
     }
 
     return (
-        <div>
+        <div id='home'>
 
             <div className='text-white flex flex-col lg:flex-row justify-center w-full h-auto lg:h-[89vh] mb-9 overflow-hidden items-center px-4'>
 
