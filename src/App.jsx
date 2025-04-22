@@ -12,7 +12,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className='w-full overflow-x-hidden'>
       <NavBar/>
       <Hero />
       <About />
@@ -20,7 +20,7 @@ function App() {
       <Skill />
       <Education />
       <Contact />
-    </>
+    </div>
   )
 }
 

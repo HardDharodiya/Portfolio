@@ -76,7 +76,7 @@ const Skill = () => {
                     variants={headingVariant}
                     initial="hidden"
                     animate={isInView ? "visible" : "hidden"}
-                    className="text-4xl font-bold mb-10 text-center"
+                    className="text-4xl font-bold mb-20 mt-10 text-center"
                 >
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-purple-400">
                         SKILLS

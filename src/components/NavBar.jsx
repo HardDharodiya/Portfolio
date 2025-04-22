@@ -21,7 +21,7 @@ const NavBar = () => {
         },
         {
             id: "education",
-            link: "education"
+            link: "Education"
         },
         {
             id: "contact",
@@ -69,7 +69,7 @@ const NavBar = () => {
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8 }}
-                className="p-4 text-xl font-mono text-center"
+                className="p-4 text-xl font-mono text-center bg-transparent"
             >
                 <motion.ul
                     className="hidden lg:flex gap-20 text-2xl"
@@ -80,7 +80,7 @@ const NavBar = () => {
                     {link.map(({ id, link }) => (
                         <motion.li
                             key={id}
-                            className='cursor-pointer ml-3 mr-3 hover:text-slate-500'
+                            className='cursor-pointer bg-transparent ml-3 mr-3 hover:text-slate-500'
                             variants={itemVariants}
                             onClick={() =>
                                 scrollToSection(id)
@@ -96,9 +96,9 @@ const NavBar = () => {
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.5, duration: 0.5 }}
-                className='lg:hidden absolute right-8 top-6 z-10'>
-                <button onClick={() => setIsOpen(!isOpen)}>
-                    {isOpen ? <X size={28} /> : <Menu size={28} />}
+                className='lg:hidden fixed right-8 top-6 z-10 bg-transparent'>
+                <button className='bg-transparent' onClick={() => setIsOpen(!isOpen)}>
+                    {isOpen ? <X size={28} /> : <Menu size={28} className='bg-transparent'/>}
                 </button>
             </motion.div>
 
@@ -112,7 +112,7 @@ const NavBar = () => {
                         exit={{ opacity: 0, y: -20 }}
                         className='flex flex-col justify-center 
                         backdrop-blur-md  border-white/10 bg-gradient-to-tr from-purple-400/10 via-slate-900/15 to-purple-500/10 shadow-purple-500/10 
-                        items-start gap-4 lg:hidden border rounded-2xl p-4  absolute top-16 right-10 z-20' // Positioning below the hamburger
+                        items-start gap-4 lg:hidden border rounded-2xl p-4 fixed top-16 right-10 z-20' // Positioning below the hamburger
                         style={{ maxHeight: '80vh', overflowY: 'auto' }}
                     >
                         {link.map(({ id, link }) => (
