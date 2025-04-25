@@ -34,7 +34,7 @@ const Hero = () => {
                     transition={{ delay: 0.8, duration: 0.8 }}
                     className='w-full lg:w-1/2 flex justify-center items-center mt-6 lg:mt-0'>
 
-                    <img src={Character} alt="Character" className="w-[70%] sm:w-[50%] lg:w-[80%]" />
+                    <img src={Character} alt="Character" className="w-[70%] sm:w-[50%] lg:w-[80%]" loading='lazy'/>
 
                 </motion.div>
 
