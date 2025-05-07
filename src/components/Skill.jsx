@@ -50,17 +50,17 @@ const Skill = () => {
     };
 
     const skills = [
-        { icon: <FaHtml5 className="text-orange-600" />, name: 'HTML5' },
-        { icon: <FaCss3Alt className="text-blue-500" />, name: 'CSS3' },
-        { icon: <SiJavascript className="text-yellow-400" />, name: 'JavaScript' },
-        { icon: <FaReact className="text-cyan-300" />, name: 'React' },
-        { icon: <SiTailwindcss className="text-cyan-400" />, name: 'Tailwind' },
-        { icon: <SiMysql className='text-[#f29418]' />, name: 'MySQL' },
-        { icon: <FaJava className='text-[#f29418]' />, name: 'Java' },
-        { icon: <FaPython className='text-[#189df0]' />, name: 'Python' },
-        { icon: <SiFigma className="text-pink-500" />, name: 'Figma' },
-        { icon: <FaGitAlt className="text-orange-500" />, name: 'Git' },
-        { icon: <FaGithub className='text-white' />, name: 'GitHub' }
+        { icon: <FaHtml5 className="text-orange-600 bg-transparent" />, name: 'HTML5' },
+        { icon: <FaCss3Alt className="text-blue-500 bg-transparent" />, name: 'CSS3' },
+        { icon: <SiJavascript className="text-yellow-400 bg-transparent" />, name: 'JavaScript' },
+        { icon: <FaReact className="text-cyan-300 bg-transparent" />, name: 'React' },
+        { icon: <SiTailwindcss className="text-cyan-400 bg-transparent" />, name: 'Tailwind' },
+        { icon: <SiMysql className='text-[#f29418] bg-transparent' />, name: 'MySQL' },
+        { icon: <FaJava className='text-[#f29418] bg-transparent' />, name: 'Java' },
+        { icon: <FaPython className='text-[#189df0] bg-transparent' />, name: 'Python' },
+        { icon: <SiFigma className="text-pink-500 bg-transparent" />, name: 'Figma' },
+        { icon: <FaGitAlt className="text-orange-500 bg-transparent" />, name: 'Git' },
+        { icon: <FaGithub className='text-white bg-transparent' />, name: 'GitHub' }
     ];
 
     return (
@@ -76,7 +76,7 @@ const Skill = () => {
                     variants={headingVariant}
                     initial="hidden"
                     animate={isInView ? "visible" : "hidden"}
-                    className="text-4xl font-bold mb-20 mt-10 text-center"
+                    className="text-4xl font-bold mb-20 mt-10 text-center bg-transparent"
                 >
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-purple-400">
                         SKILLS
@@ -95,10 +95,10 @@ const Skill = () => {
                             key={idx}
                             className="flex flex-col items-center bg-transparent w-20 sm:w-24"
                         >
-                            <motion.div className="hover:scale-110 transition duration-300 ease-in-out text-4xl sm:text-5xl">
+                            <motion.div className="hover:scale-110 transition duration-300 ease-in-out text-4xl sm:text-5xl bg-transparent">
                                 {skill.icon}
                             </motion.div>
-                            <p className="text-center text-sm sm:text-lg font-mono mt-2">
+                            <p className="text-center text-sm sm:text-lg bg-transparent font-mono mt-2">
                                 {skill.name}
                             </p>
                         </motion.div>

@@ -51,7 +51,7 @@ const About = () => {
           variants={contentVariant}
           className="w-full md:w-2/3 h-full flex flex-col bg-transparent justify-center items-center p-4"
         >
-          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center">
+          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center bg-transparent">
             <span className="text-transparent bg-clip-text bg-gradient-to-r bg-t\ from-purple-500 to-purple-400">
               About Me
             </span>
