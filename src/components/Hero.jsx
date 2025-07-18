@@ -2,7 +2,7 @@ import React from 'react'
 import github from "../assets/githublogo.svg"
 import linkedin from "../assets/linkedinlogo.svg"
 import Character from "../assets/character.png"
-import Resume from "../resume/Hard Dharodiya.pdf"
+import Resume from "../resume/Hard_Dharodiya_Resume.pdf"
 import { motion } from 'framer-motion'
 
 
@@ -38,7 +38,7 @@ const Hero = () => {
 
                 </motion.div>
 
-                {/* Left card */}
+                {/* card */}
                 <motion.div
                     initial={{ x: 100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
